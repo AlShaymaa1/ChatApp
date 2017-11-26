@@ -1,0 +1,66 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    >
+
+
+    <android.support.v7.widget.CardView
+        app:cardBackgroundColor="@color/white"
+        app:cardUseCompatPadding="true"
+        app:cardElevation="3dp"
+        app:cardCornerRadius="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:gravity="bottom"
+            android:padding="4dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="108dp">
+            <EditText
+                android:id="@+id/post_text"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:hint="write post"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_marginBottom="8dp"
+                android:id="@+id/post_insert"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_gravity="bottom"
+                android:tint="@color/colorAccent"
+                android:src="@drawable/ic_send_white_24dp"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+
+                />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/post_img_upload"
+            android:tint="@color/colorAccent"
+            android:src="@drawable/ic_image_white_24dp"
+            android:layout_margin="12dp"
+            android:layout_gravity="right|top"
+            android:layout_width="24dp"
+            android:layout_height="24dp" />
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/news_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+
+
+</LinearLayout>

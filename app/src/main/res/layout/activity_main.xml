@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimaryDark"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+
+    <LinearLayout
+        android:id="@+id/container"
+
+        android:orientation="vertical"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+        <ImageView
+            android:layout_gravity="center"
+            android:src="@drawable/clogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:id="@+id/username_input_layout">
+            <EditText
+                android:textColor="@color/white"
+                android:id="@+id/username_input"
+                android:hint="Username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:id="@+id/pass_input_layout"
+            app:passwordToggleEnabled="true">
+            <EditText
+                android:textColor="@color/white"
+                android:inputType="textPassword"
+                android:id="@+id/pass_input"
+                android:hint="Password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </android.support.design.widget.TextInputLayout>
+        <LinearLayout
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginLeft="24dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:textColor="@color/white"
+                android:background="@color/colorPrimary"
+                android:layout_weight="0.25"
+                android:text="register"
+                android:id="@+id/register_btt"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="4dp"
+                android:layout_marginLeft="4dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:layout_height="36dp" />
+            <Button
+                android:background="@color/white"
+                android:layout_weight="0.75"
+                android:text="login"
+                android:id="@+id/login_btt"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="4dp"
+                android:layout_marginLeft="4dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:layout_height="36dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <ProgressBar
+        android:id="@+id/loading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        style="?android:attr/progressBarStyleLarge"
+        />
+
+    </FrameLayout>
